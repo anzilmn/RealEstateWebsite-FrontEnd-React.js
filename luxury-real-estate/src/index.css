@@ -1,0 +1,33 @@
+/* src/index.css */
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    /* Background is black, body text is lime green */
+    @apply bg-luxury-black text-lime-green antialiased font-sans;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Headings now use the neon lime */
+  h1, h2, h3, h4 {
+    @apply font-serif tracking-[0.2em] uppercase text-neon-lime;
+  }
+
+  /* Links */
+  a {
+    @apply text-lime-green hover:text-luxury-gold transition-colors duration-300;
+  }
+}
+
+/* Scrollbar updated to match the green theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-luxury-black;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-neon-lime rounded-full;
+}
