@@ -1,16 +1,26 @@
-# React + Vite
+💻 Setup & Installation
+Clone the repository:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bash
+git clone <repository-url>
+Install dependencies:
 
-Currently, two official plugins are available:
+Bash
+npm install
+Install Leaflet for maps:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Bash
+npm install react-leaflet leaflet
+Run the application:
 
-## React Compiler
+Bash
+npm start
+📝 Configuration
+The theme is configured in tailwind.config.js using the "Midnight Lime" palette (Black background, Lime Green text).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🚀 Future Enhancements
+[ ] Integrate backend API for real-time data fetching.
 
-## Expanding the ESLint configuration
+[ ] Implement secure user authentication (Firebase/Auth0).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[ ] Add image upload capabilities to the profile page.
